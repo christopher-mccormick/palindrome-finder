@@ -29,7 +29,7 @@ To stop production mode running:
     npm run production:stop
 
 ### Accessing the application 
-By defulat the application will run on port `localhost:3010`
+By default the application will run on port `localhost:3010`
 The default port can be changed by providing an environment variable while starting the application e.g.
 
     PORT=3001 npm start
@@ -41,18 +41,18 @@ Using a REST Client the application will return palindrome information directly 
 ##### GET /reporter?input=xxx
 Get a JSON packet with the longest 3 unique palindromes found the input query string provided.
 
-Alternatively a basic UI has been created to allow palindrome queries to be submitted.  This can be access in your brower by navigating to `/search`.  If running on the default port this will result in a URL of http://localhost:3010/search
+Alternatively a basic UI has been created to allow palindrome queries to be submitted.  This can be access in your browser by navigating to `/search`.  If running on the default port this will result in a URL of http://localhost:3010/search
 
 ### Run the Tests ###
 A test suite has been set up for the application using the test framework JEST.  These test can be run from the root of the project using:
 
       npm run test
       
-A coverage report has also been configure to run using:
+A coverage report has also been configured to run using:
 
       npm run coverage
       
-In addition to unit testing eslint has been configured for the project in order to provide styling consistancy. Eslint can be run using:
+In addition to unit testing eslint has been configured for the project in order to provide styling consistency. Eslint can be run using:
 
     npm run lint
     
