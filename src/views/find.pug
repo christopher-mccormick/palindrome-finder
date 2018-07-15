@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        script.
+            function getLongestPalindromes(){
+                const value = document.getElementsByName('palindrome')[0].value;
+                const query = `input=${value}`;
+                const req = new XMLHttpRequest();
+                req.open('GET', '/search/results?' + query);
+                req.onreadystatechange = function(){
+                  if(req.readyState === 4){
+                      document.getElementById('content').innerHTML = req.responseText;
+                  }
+              }
+              req.send();
+            }
+    body
+        #content!= results
+        div.input
+            input(type="text", name="palindrome")
+        input(type="button",value="Find Palindromes", onClick="getLongestPalindromes()")
