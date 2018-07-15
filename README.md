@@ -1,27 +1,27 @@
 # Palindrome Finder #
 
-### Dependencies ###
+## Dependencies
 
-The application has been build using Node.js v10.6.0 and npm 6.1.0
+This application has been built using Node.js v10.6.0 and npm 6.1.0
 These should both be installed to run the application and can be found at https://nodejs.org/en/
 
-### Build the Application ###
+## Build the Application
 
-To build the application run the following commands from the project directory
+To build the application run the following commands from the project's root directory
  
     npm install
     npm run build
     
-### Run the Application ###
-Once you have built the application there are a number of way to run it
+## Run the Application
+Once you have built the application there are a number of modes in which it can run:
 
-## Development Mode
+### Development Mode ###
     npm run start:dev
     
-## Built Debug Mode
+### Built Debug Mode ###
     npm start
     
-## Production Mode
+### Production Mode ###
     npm run production
 
 To stop production mode running:
@@ -37,14 +37,15 @@ The default port can be changed by providing an environment variable while start
 ## End Points
 Once you have the application running using any of the mode there are a nuber of endpoints exposed.
 
-Using a REST Client the application will return palindrome information directly from the following API call:
+Using a REST Client your browser the application will return palindrome information in JSON directly from the following API call:
+
 ##### GET /reporter?input=xxx
 Get a JSON packet with the longest 3 unique palindromes found the input query string provided.
 
-Alternatively a basic UI has been created to allow palindrome queries to be submitted.  This can be access in your browser by navigating to `/search`.  If running on the default port this will result in a URL of http://localhost:3010/search
+Alternatively a basic UI has been created to allow palindrome queries to be submitted.  This can be accessed in your browser by navigating to `/search`.  If running on the default port this will result in a URL of http://localhost:3010/search
 
 ### Run the Tests ###
-A test suite has been set up for the application using the test framework JEST.  These test can be run from the root of the project using:
+A test suite has been set up for the application using the test framework JEST.  These tests can be run from the root of the project using:
 
       npm run test
       
