@@ -40,7 +40,7 @@ Once you have the application running using any of the mode there are a nuber of
 Using a REST Client your browser the application will return palindrome information in JSON directly from the following API call:
 
 ##### GET /reporter?input=xxx
-Get a JSON packet with the longest 3 unique palindromes found the input query string provided.
+_Get a JSON packet with the longest 3 unique palindromes found the input query string provided._
 
 Alternatively a basic UI has been created to allow palindrome queries to be submitted.  This can be accessed in your browser by navigating to `/search`.  If running on the default port this will result in a URL of http://localhost:3010/search
 
