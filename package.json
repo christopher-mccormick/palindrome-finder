@@ -1,0 +1,38 @@
+{
+  "name": "palindrome-finder",
+  "version": "1.0.0",
+  "description": "Coding Test",
+  "main": "build/app.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "start": "node ./build/server",
+    "start:dev": "nodemon --exec babel-node -- src/server.js",
+    "production": "pm2 start ./build/server.js",
+    "production:stop": "pm2 stop all",
+    "test": "jest",
+    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/server.js --coverage src",
+    "lint": "eslint ."
+  },
+  "author": "Chris McCormick",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.4.1",
+    "nodemon": "^1.18.2",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "pm2": "^3.0.0"
+  }
+}

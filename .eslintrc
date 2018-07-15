@@ -1,0 +1,14 @@
+{
+  "extends": [
+   "airbnb",
+   "plugin:jest/recommended"
+  ],
+  "env": {
+    "node": true,
+    "jest": true,
+    "jest/globals": true
+  },
+  plugins: [
+    "jest"
+  ]
+}
