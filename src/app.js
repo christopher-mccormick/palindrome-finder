@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(helmet());
 app.use(bodyParser.json({ limit: '1mb' }));
 app.get('/', (req, res) => res.status(200).send('parlindrome-finder v1.0.0'));
+app.get('/favicon.ico', (req, res) => res.status(204));
 app.use('/reporter', routes.reporter);
 app.use('/search', routes.search);
 app.use((req, res, next) => {
